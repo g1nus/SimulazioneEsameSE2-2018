@@ -18,7 +18,7 @@ app.get('/', function(req, res){
 app.get('/square', function(req, res){
   var s = req.query.string;
   var result = string_square(s);
-  res.JSON({"result": result});
+  res.json({"result": result});
 });
 
 app.listen(PORT, function () {
