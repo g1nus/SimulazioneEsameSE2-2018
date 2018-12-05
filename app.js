@@ -18,9 +18,11 @@ app.get('/', function(req, res){
 app.get('/square', function(req, res){
   var s = req.query.string;
   var result = string_square(s);
-  res.send({"result": result});
+  res.JSON({"result": result});
 });
 
 app.listen(PORT, function () {
   console.log('Listening on port 3000!');}
 );
+
+module.exports.string_square = string_square;
