@@ -3,7 +3,6 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 function string_square(s) {
-  console.log(s);
   if(s !== null && s !== undefined){
     return s.length*s.length;
   }else{
