@@ -21,4 +21,6 @@ app.get('/square', function(req, res){
   res.send({"result": result});
 });
 
-app.listen(PORT);
+app.listen(PORT, function () {
+  console.log('Listening on port 3000!');}
+);
